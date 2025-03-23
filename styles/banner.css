@@ -1,12 +1,13 @@
 .banner{
     background-color: var(--azul-escuro);
-    padding: 5em 12.5em;
+    padding: 5em 12.5%  ;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     background-image: url("../assests/banner-background.png");
     background-position: bottom;
     background-repeat: no-repeat;
+    gap: 3.5em;
 }
 
 .container__banner__titulo{
@@ -29,4 +30,24 @@
     padding: 1em 1.5em;
     background-color: var(--roxo);
     border-radius: 2em;
+}
+
+.banner__image{
+    width:100%;
+}
+
+@Media screen and (max-width: 1280px){
+
+    .banner{
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 5em 2.37em;
+    }
+
+    
+    .container__banner__titulo{
+        font-size: 3.81rem;
+        line-height: 72.2px;
+    }
+
 }

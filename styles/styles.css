@@ -3,12 +3,19 @@
 
 @import url("./cabecalho.css");
 @import url("./banner.css");
+@import url("./categoria.css");
+@import url("./promocao.css");
+@import url("./newsletter.css");
+@import url("./rodape.css");
 
 
 :root{
     --cinza-escuro: #444444;
-    --cinza-medio: #EFEFEF;
+    --cinza-medio: #5E6E89;
+    --cinza-claro: #EFEFEF;
     --azul-escuro: #090129;
+    --azul-medio: #0B254B;
+    --azul-newsletter: #19325C;
     --rosa: #FF55DF;
     --verde: #8FFF24;
     --roxo-escuro: #430091;

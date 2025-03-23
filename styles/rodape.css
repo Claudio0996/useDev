@@ -1,0 +1,61 @@
+.rodape{
+    background: var(--azul-escuro);
+    padding: 32px 12.5%;
+
+}
+
+.rodape__linha__1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.rodape__linha__2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "pagamento . . redes";
+}
+
+.rodape__pagamentos{
+    grid-area: pagamento;
+}
+
+.rodape__redes{
+    grid-area: redes;
+}
+
+.rodape__logo-descricao{
+    font-size:1rem;
+    color: var(--verde);
+    line-height: 120%;
+    font-weight: 400;
+    padding-top: 24px;
+}
+
+
+.rodape__titulo, .rodape__descricao{
+    color: var(--cinza-claro);
+    font-family: var(--poppins);
+    line-height: 120%;
+}
+.rodape__titulo{
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+
+.rodape__descricao{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 4px 0;
+}
+
+.rodape-divisao{
+    border: 1.5px solid var(--verde);
+    margin: 24px 0;
+}
+
+.rodape__pagamento__lista, .rodape__redes__lista{
+    display: flex;
+    gap: 16px;
+}
