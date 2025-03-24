@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/product.css">
+    <title>Pdroduct</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__nav">
+            <ul class="cabecalho__nav__list">
+                <li class="cabecalho__logo">
+                    <p class="item__logo">
+                        <img src="./assests/icons/logo.svg" alt="Logo do Ecommerce">
+                    </p>
+                </li>
+                <li class="cabecalho__nav__list__item cabecalho__nav__list__item-sobre">
+                    <a href="" class="cabecalho__nav__list__link item__sobre">
+                        Sobre nós
+                    </a>
+                </li>
+                <li class="cabecalho__nav__list__item cabecalho__nav__list__item-input">
+                    <input type="search" placeholder="O que voce procura?" class="item__input">
+                </li>
+                <li class="cabecalho__nav__list__item cabecalho__nav__list__link-login">
+                    <a href="" class="cabecalho__nav__list__link item__login ">
+                        Login
+                    </a>
+                </li>
+                <li class="cabecalho__nav__list__item cabecalho__nav__list__link-perfil">
+                    <a href="" class="cabecalho__nav__list__link item__perfil">
+                        <img src="./assests/icons/perfil.svg" alt="perfil">
+                    </a>
+                </li>
+                <li class="cabecalho__nav__list__item cabecalho__nav__list__link-carrinho">
+                    <a href="" class="cabecalho__nav__list__link item__carrinho">
+                        <img src="./assests/icons/carrinho.svg" alt="carrinho">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="detalhe">
+        <h3 class="detalhe__titulo">Detalhes do Produto</h3>
+        <div class="detalhe__container">
+            <img src="./assests/produtos/camiseta.png" alt="Foto da camiseta à venda" class="detalhe__container__img">
+
+            <div class="detalhe__conteudo">
+                <h4 class="detalhe__conteudo-titulo">Camiseta Capy</h4>
+                <h5 class="detalhe__conteudo-descricao">Camiseta 100% algodao</h5>
+                <h5 class="detalhe_conteudo-valor">28,00</h5>
+
+                <div class="detalhes__img">
+                    <img src="./assests/icons/compartilhar.svg" alt="">
+                    <img src="./assests/icons/favoritar.svg" alt="">
+                </div>
+
+                <div class="detalhes__cor">
+                    <h4 class="cor__titulo">Escolha a cor do tecido</h4>
+                    <input type="radio" id="Branco" name="cor">
+                    <label for="Branco" class="cor__nome">Branco</label>
+
+                    <input type="radio" id="Bege" name="cor">
+                    <label for="Bege" class="cor__nome">Bege</label>
+
+                    <input type="radio" id="Cinza" name="cor">
+                    <label for="Cinza" class="cor__nome">Cinza</label>
+                </div>
+
+                <div class="detalhe__opcoes">
+                    <input type="text" placeholder="Quantidade" class="opcoes__input">
+                    <input type="text" placeholder="Tamanho" class="opcoes__input">
+                    <button type="submit"  class="opcoes__buscar">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape__linha__1">
+
+            <div class="rodape__logo">
+                <img src="./assests/icons/logo-verde.svg" alt="Logo verde do ecommerce">
+                <p class="rodape__logo-descricao">Hora de abraçar seu lado geek!</p>
+            </div>
+
+            <div class="rodape__funcionamento">
+                <h5 class="rodape__titulo">Funcionamento</h5>
+                <ul class="rodape__lista">
+                    <li class="rodape__item">
+                        <p class="rodape__descricao">Segunda a Sexta - 8h às 18h</p>
+                    </li>
+                    <li class="rodape__item">
+                        <p class="rodape__descricao">sac@usedev.com.br</p>
+                    </li>
+                    <li class="rodape__item">
+                        <p class="rodape__descricao">0800 541 320</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="rodape__institucional">
+                <h5 class="rodape__titulo">Institucional</h5>
+                <ul class="rodape__lista">
+                    <li class="rodape__item">
+                        <p class="rodape__descricao">Sobre nós</p>
+                    </li>
+                    <li class="rodape__item">
+                        <p class="rodape__descricao">Contato</p>
+                    </li>
+                    <li class="rodape__item">
+                        <p class="rodape__descricao">Política de Privacidade</p>
+                    </li>
+                    <li class="rodape__item">
+                        <p class="rodape__descricao">LGPD - Lei Geral De proteção de Dados</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="rodape__informacoes">
+                <h5 class="rodape__titulo">Informacoes</h5>
+                <ul class="rodape__lista">
+                    <li class="rodape__item">
+                        <p class="rodape__descricao">Entregas </p>
+                    </li>
+                    <li class="rodape__item">
+                        <p class="rodape__descricao">Garantias</p>
+                    </li>
+                    <li class="rodape__item">
+                        <p class="rodape__descricao">Trocas e devoluções</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="rodape-divisao">
+
+        <div class="rodape__linha__2">
+
+            <div class="rodape__pagamentos">
+                <h5 class="rodape__titulo">Formas de Pagamento</h5>
+                <ul class="rodape__pagamento__lista">
+                    <li class="rodape__item">
+                        <img src="./assests/icons/icon-cartao-visa.svg" alt="Bandeira visa">
+                    </li>
+                    <li class="rodape__item">
+                        <img src="./assests/icons/icon-cartao-master.svg" alt="Bandeira master">
+                    </li>
+                    <li class="rodape__item">
+                        <img src="./assests/icons/icon-cartao-elo.svg" alt="Bandeira elo">
+                    </li>
+                    <li class="rodape__item">
+                        <img src="./assests/icons/icon-cartao-diners.svg" alt="Bandeira dinners">
+                    </li>
+                    <li class="rodape__item">
+                        <img src="./assests/icons/icon-pix.svg" alt="pix">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="rodape__redes">
+                <h5 class="rodape__titulo">Siga nossas redes:</h5>
+                <ul class="rodape__redes__lista">
+                    <li class="rodape__item">
+                        <img src="./assests/icons/whatsapp.svg" alt="Icone WhatsApp">
+                    </li>
+                    <li class="rodape__item">
+                        <img src="./assests/icons/instagram.svg" alt="Icone Instagram">
+                    </li>
+                    <li class="rodape__item">
+                        <img src="./assests/icons/tiktok.svg" alt="Icone Tik Tok">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
