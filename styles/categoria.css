@@ -73,3 +73,30 @@
     width: 100%;
     object-fit: contain;
 }
+
+@media screen and (max-width: 450px) {
+    .categoria__list{
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "roupas"
+        "decoracao"
+        "canecas"
+        "acessorio";
+    }
+
+    .categoria__list__item-roupas{
+        grid-area: roupas;
+    }
+
+    .categoria__list__item-decoracao{
+        grid-area: decoracao;
+    }
+    
+    .categoria__list__item-canecas{
+        grid-area: canecas
+    }
+
+    .categoria__list__item-acessorios{
+        grid-area:acessorio;
+    }
+}

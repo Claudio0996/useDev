@@ -6,12 +6,12 @@
 
 .rodape__linha__1{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
 }
 
 .rodape__linha__2{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
     grid-template-areas: 
     "pagamento . . redes";
 }
@@ -58,4 +58,69 @@
 .rodape__pagamento__lista, .rodape__redes__lista{
     display: flex;
     gap: 16px;
+}
+
+@media screen and (max-widtH: 768PX){
+    .rodape__linha__1{
+        grid-template-areas: 
+        "logo logo logo"
+        "Funcionamento Institucional Informacoes";
+        gap: 24px;
+    }
+
+    .rodape__logo{
+        grid-area: logo;
+        text-align: center;
+    }
+
+    .rodape__funcionamento{
+        grid-area: Funcionamento;
+    }
+
+    .rodape__institucional{
+        grid-area: Institucional;
+    }
+
+    .rodape__informacoes{
+        grid-area: Informacoes;
+    }
+
+    .rodape_divisao{
+        border: none;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .rodape__linha__1, .rodape__linha__2{
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "logo"
+        "funcionamento"
+        "institucional"
+        "informacoes"
+        "pagamento"
+        "redes";
+        gap: 16px;
+    }
+    .rodape__logo{
+        grid-area: logo;
+    }
+    .rodape__funcionamento{
+        grid-area: funcionamento;
+    }
+    .rodape__institucional{
+        grid-area: institucional;
+    }
+    .rodape__informacoes{
+        grid-area: informacoes;
+    }
+    
+    .rodape__pagamentos{
+        grid-area: pagamento;
+    }
+
+    .rodape__redes{
+        grid-area: redes;
+    }
 }

@@ -79,3 +79,17 @@
 
     }
 }
+
+@media screen and (max-width: 450px){
+    .cabecalho__nav__list__item-input{
+        display: none;
+    }
+
+    .cabecalho__nav__list__item-sobre{
+        display:none;
+    }
+
+    .cabecalho__nav__list__link-login{
+        display: none;
+    }
+}

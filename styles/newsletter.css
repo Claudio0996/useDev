@@ -22,7 +22,7 @@
 }
 .newsletter__form{
     margin-top: 32px;
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr auto;
     gap: 16px;
     width: 60%;
@@ -50,4 +50,20 @@
     line-height: 120%;
     font-size: 20px;
     border: 0
+}
+
+@media screen and (max-width: 540px) {
+    .newsletter__form{
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "input"
+        "botao";
+    }
+
+    .newsletter__input{
+        grid-area: input;
+    }
+    .newsletter__buton{
+        grid-area:botao;
+    }
 }
