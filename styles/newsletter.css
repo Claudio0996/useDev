@@ -52,7 +52,7 @@
     border: 0
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
     .newsletter__form{
         grid-template-columns: auto;
         grid-template-areas: 
@@ -62,8 +62,14 @@
 
     .newsletter__input{
         grid-area: input;
+        width: 100%;
+        padding: 8px 4px;
     }
     .newsletter__buton{
         grid-area:botao;
+    }
+
+    .newsletter__input::placeholder{
+        font-size:14px;
     }
 }
